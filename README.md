@@ -21,6 +21,12 @@ An interactive, spaced-repetition trainer for MBB (McKinsey / BCG / Bain) case i
 - **Story Bank** — the other half of the interview: build 4-6 real fit stories with a STAR editor, track theme coverage, and rehearse random fit questions against the clock
 - **Spaced repetition** — a Leitner-system review queue tracks every drill and chain node, scheduling weak spots back sooner
 
+## Evals
+
+The Profit Diagnosis Game scores two axes that move independently — *did you reach the right root cause* and *how efficient was the path you took to get there* — and the second one needs a judgment call about reasoning, not a string match. [`evals/`](evals/) holds a designed harness for it: a 12-scenario golden set (each with a deliberately tempting wrong answer), a two-axis LLM judge with anti-halo-effect rules, and a calibration plan.
+
+**Designed, not yet validated** — no transcripts graded, no human labels, so the judge's agreement rate is unmeasured. See [`evals/README.md`](evals/README.md) for the honest scope and what finishing it takes.
+
 ## Stack
 
 Single self-contained HTML file. Vanilla JavaScript, no framework, no dependencies, no build step. Progress saves to `localStorage` in whatever browser you open it in — open it the same way each time to keep your streak.

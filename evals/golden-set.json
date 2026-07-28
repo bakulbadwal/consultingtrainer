@@ -1,0 +1,158 @@
+[
+  {
+    "scenario_id": "PD-01",
+    "business_context": "MidTier Cloud, a 200-person B2B SaaS company selling project-management software, saw total revenue flat at $42M despite unit sales (seat licenses) growing 14% year-over-year. The CFO is confused why growth in customers isn't showing up in revenue.",
+    "correct_root_cause": "Price erosion — the sales team has been discounting more heavily to win competitive deals; average realized price per seat has fallen 13% YoY while list price is unchanged.",
+    "optimal_data_pull_sequence": [
+      "Revenue trend by month (confirm flat despite volume growth)",
+      "Unit volume trend (seats sold) by month",
+      "Average realized price per seat vs. list price, by quarter",
+      "Discount rate / win-rate on discounted deals by sales rep or region"
+    ],
+    "incorrect_distractor_cause": "Share loss to a competitor",
+    "why_distractor_is_tempting": "Flat revenue alongside a crowded competitive market makes candidates jump to 'we're losing customers to competitors' before checking that volume is actually growing."
+  },
+  {
+    "scenario_id": "PD-02",
+    "business_context": "Harborline Freight, a regional trucking company with $180M in revenue, has seen operating margin compress from 11% to 6% over two quarters even though shipment volumes and per-shipment rates have both held steady.",
+    "correct_root_cause": "Cost inflation — diesel fuel costs rose 22% and driver wages rose 9% due to a regional labor shortage, both flowing straight to COGS without a matching rate increase.",
+    "optimal_data_pull_sequence": [
+      "Revenue and shipment volume trend (confirm both stable)",
+      "Realized rate per shipment/mile (confirm pricing unchanged)",
+      "COGS breakdown by line item (fuel, labor, maintenance) over the period",
+      "Fuel price index and regional wage data for the same period"
+    ],
+    "incorrect_distractor_cause": "Mix shift toward lower-margin shipment types",
+    "why_distractor_is_tempting": "Margin compression with stable revenue naturally suggests the mix of business shifted toward cheaper, lower-margin routes rather than costs simply rising."
+  },
+  {
+    "scenario_id": "PD-03",
+    "business_context": "Solstice Apparel, a mid-market DTC clothing brand, has watched gross margin fall from 58% to 49% over the past three quarters. Marketing spend and customer traffic are both up, and unit sales volume is at an all-time high.",
+    "correct_root_cause": "Price erosion — the brand leaned heavily on promotional codes and site-wide sales events to drive the traffic/volume growth, cutting average selling price per unit by 18%.",
+    "optimal_data_pull_sequence": [
+      "Gross margin and revenue trend by quarter",
+      "Unit sales volume trend (confirm it's up, ruling out share loss)",
+      "Average selling price (net of discounts) vs. list price by quarter",
+      "Percent of orders using a promo code / average discount depth"
+    ],
+    "incorrect_distractor_cause": "Cost inflation in materials or shipping",
+    "why_distractor_is_tempting": "A retail brand with falling margins immediately triggers thoughts of rising input or freight costs, especially given known apparel-industry cost headlines."
+  },
+  {
+    "scenario_id": "PD-04",
+    "business_context": "Beacon Dental Group, a 15-location dental services organization, has seen same-location patient visit volume drop 20% over the past two quarters while pricing per procedure and payer mix have remained unchanged.",
+    "correct_root_cause": "Share loss — a new low-cost dental chain opened three locations within a mile of Beacon's busiest offices and is capturing new-patient volume, particularly among price-sensitive walk-ins.",
+    "optimal_data_pull_sequence": [
+      "Patient visit volume trend by location, same-location basis",
+      "Price/reimbursement per procedure trend (confirm unchanged)",
+      "Payer/procedure mix trend (confirm unchanged)",
+      "New-patient acquisition trend and competitive openings near affected locations"
+    ],
+    "incorrect_distractor_cause": "Mix shift toward lower-frequency procedures",
+    "why_distractor_is_tempting": "Falling visit volume in a healthcare setting often gets misread as patients simply needing fewer visits (a mix/utilization story) rather than patients going elsewhere entirely."
+  },
+  {
+    "scenario_id": "PD-05",
+    "business_context": "Nimbus Mobile, a regional wireless carrier with 1.2M subscribers, reported flat ARPU but a net subscriber loss of 60,000 in the last two quarters after years of steady growth, even as churn-driving price and plan structure stayed the same.",
+    "correct_root_cause": "Share loss — a national carrier launched an aggressive 5G bundle promotion in Nimbus's core metro markets, pulling subscribers away primarily at contract renewal.",
+    "optimal_data_pull_sequence": [
+      "Subscriber count trend (gross adds vs. churn) by quarter",
+      "ARPU and plan pricing trend (confirm unchanged)",
+      "Churn reason codes / exit survey data",
+      "Competitor promotional activity and net subscriber trends in overlapping markets"
+    ],
+    "incorrect_distractor_cause": "Price erosion from aggressive retention discounting",
+    "why_distractor_is_tempting": "Subscriber losses in telecom are so often tied to price wars that candidates assume Nimbus itself must have cut prices to compete, without checking that ARPU is actually flat."
+  },
+  {
+    "scenario_id": "PD-06",
+    "business_context": "Prairie Foods, a packaged snacks manufacturer selling to grocery chains, has seen total case volume shipped hold flat but net revenue per case fall 9% over the last three quarters, even though list prices to retailers have not changed.",
+    "correct_root_cause": "Mix shift — retailers have shifted their ordering toward Prairie's smaller, lower-priced 'value pack' SKUs and away from the larger family-size SKUs, pulling down blended revenue per case despite unchanged unit pricing.",
+    "optimal_data_pull_sequence": [
+      "Total case volume trend (confirm flat)",
+      "List price by SKU trend (confirm unchanged)",
+      "Revenue per case blended vs. by SKU/size tier",
+      "SKU mix (% of volume by pack size) trend over the same period"
+    ],
+    "incorrect_distractor_cause": "Price erosion via trade promotion spend",
+    "why_distractor_is_tempting": "Falling net revenue per case looks like classic trade-discounting behavior in CPG, so candidates default to a pricing/promotion story instead of checking SKU mix."
+  },
+  {
+    "scenario_id": "PD-07",
+    "business_context": "Ironclad Fasteners, a B2B industrial parts distributor, has seen gross margin fall from 34% to 27% over four quarters. Sales volume in units is up 5%, and management insists supplier costs have been stable per their contracts.",
+    "correct_root_cause": "Mix shift — large industrial accounts (which buy at deep volume-tier pricing and lower margin) have grown from 30% to 55% of unit volume, crowding out the higher-margin small-account/retail channel.",
+    "optimal_data_pull_sequence": [
+      "Gross margin and revenue trend by quarter",
+      "Unit volume trend (confirm growth, ruling out share loss)",
+      "Supplier/input cost trend per unit (confirm stable, ruling out cost inflation)",
+      "Revenue and margin split by customer segment/channel (large accounts vs. small accounts) over time"
+    ],
+    "incorrect_distractor_cause": "Cost inflation from suppliers",
+    "why_distractor_is_tempting": "Falling margins in a distribution business with rising input-cost headlines industry-wide makes 'our suppliers raised prices' the reflexive first guess."
+  },
+  {
+    "scenario_id": "PD-08",
+    "business_context": "Coastal Brew Co., a regional craft beverage company, has seen blended gross margin drop from 45% to 36% over two quarters. Total revenue is up 8% and total volume (cases) is up 11%, so leadership assumed things were going well until margin was flagged.",
+    "correct_root_cause": "Mix shift — growth has come almost entirely from the lower-margin private-label/co-pack business for grocery chains, while the higher-margin branded product line has been flat, diluting blended margin even as top-line grows.",
+    "optimal_data_pull_sequence": [
+      "Revenue and volume trend (confirm both growing)",
+      "Gross margin trend blended vs. by product line (branded vs. private-label)",
+      "Volume and revenue mix by product line over the same period",
+      "Per-unit pricing and cost by product line (confirm each line's own margin is stable)"
+    ],
+    "incorrect_distractor_cause": "Cost inflation in raw materials (hops, aluminum cans)",
+    "why_distractor_is_tempting": "Beverage/CPG margin compression is widely associated with commodity input cost spikes, so that's the first hypothesis candidates reach for instead of checking the revenue mix."
+  },
+  {
+    "scenario_id": "PD-09",
+    "business_context": "Redwood HVAC Services, a residential HVAC installation and repair company operating in three metro markets, has seen operating margin fall from 22% to 14% over three quarters. Job volume and average job price are both flat.",
+    "correct_root_cause": "Cost inflation — technician labor costs rose 15% due to a regional shortage of licensed HVAC techs forcing wage increases, and refrigerant costs rose sharply due to a regulatory phase-out of an older refrigerant type, both hitting job-level costs directly.",
+    "optimal_data_pull_sequence": [
+      "Operating margin and revenue trend by quarter",
+      "Job volume and average job price trend (confirm both flat)",
+      "Cost per job breakdown (labor, materials/refrigerant, overhead) over time",
+      "Regional technician wage trend and refrigerant price trend over the same period"
+    ],
+    "incorrect_distractor_cause": "Share loss to lower-cost competitors",
+    "why_distractor_is_tempting": "Margin decline in a competitive local services market is often blamed on losing better jobs to rivals, but job volume and pricing being flat should rule that out quickly."
+  },
+  {
+    "scenario_id": "PD-10",
+    "business_context": "Vantage Steel, a mid-size structural steel fabricator, has seen operating margin collapse from 18% to 9% in two quarters. Order backlog and shipped tonnage are both at record highs, and contract prices per ton were locked in before the drop began.",
+    "correct_root_cause": "Cost inflation — steel coil (raw material input) prices spiked 30% due to a supply disruption, and because Vantage's contracts were fixed-price without cost-escalation clauses, the higher input cost was absorbed entirely as margin compression.",
+    "optimal_data_pull_sequence": [
+      "Operating margin and shipped tonnage/revenue trend (confirm volume is not the issue)",
+      "Contract/realized price per ton trend (confirm fixed, ruling out price erosion)",
+      "Cost per ton breakdown, isolating raw material (steel coil) input cost",
+      "Steel coil market price index over the same period, and check contract escalation clause terms"
+    ],
+    "incorrect_distractor_cause": "Mix shift toward lower-margin project types",
+    "why_distractor_is_tempting": "A fabricator with record volume but shrinking margin looks like it could be winning more of the 'wrong' (thinner-margin) projects, which distracts from checking the raw input cost line directly."
+  },
+  {
+    "scenario_id": "PD-11",
+    "business_context": "Aspen Outdoor Retail, a 40-store outdoor gear chain, has seen same-store revenue decline 12% over two quarters. Foot traffic per store is down 15%, while average transaction value and units per transaction have stayed roughly constant.",
+    "correct_root_cause": "Share loss — a national e-commerce competitor expanded free same-day delivery into Aspen's core metro markets, pulling walk-in traffic toward online purchasing for the exact product categories Aspen specializes in.",
+    "optimal_data_pull_sequence": [
+      "Same-store revenue trend by quarter",
+      "Foot traffic trend by store (confirm the decline is traffic-driven, not basket-driven)",
+      "Average transaction value and units per transaction trend (confirm unchanged)",
+      "Category-level online sales growth for competitors in overlapping trade areas"
+    ],
+    "incorrect_distractor_cause": "Price erosion from clearance/markdown activity",
+    "why_distractor_is_tempting": "Declining store revenue in retail is commonly pattern-matched to markdown-driven price erosion, especially with outdoor gear's seasonal clearance cycles, before checking that transaction value is actually stable."
+  },
+  {
+    "scenario_id": "PD-12",
+    "business_context": "Lumen Analytics, a 60-person data analytics consultancy, has seen quarterly revenue fall from $9.5M to $7.8M even as the number of active client contracts held steady and average contract value was unchanged at signing.",
+    "correct_root_cause": "Share loss — two of Lumen's five largest clients shifted a portion of their analytics work in-house after building internal data science teams, effectively reducing scope-of-work (and thus billed hours) on renewal — functionally the same loss-of-wallet-share dynamic as losing accounts to a rival.",
+    "optimal_data_pull_sequence": [
+      "Revenue trend by quarter",
+      "Active contract count trend (confirm steady, ruling out simple attrition)",
+      "Contract value at signing vs. actual billed value at renewal, by top accounts",
+      "Client-level scope-of-work / hours billed trend for top 5 accounts, with renewal notes"
+    ],
+    "incorrect_distractor_cause": "Price erosion from renewal discounting",
+    "why_distractor_is_tempting": "Falling revenue with a stable client count and stable headline contract value looks like renewal-time discounting, when the real driver is shrinking scope/wallet share, not rate."
+  }
+]
